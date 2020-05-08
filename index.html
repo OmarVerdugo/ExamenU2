@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Examen Unidad 2</title>
+
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="sketch.js"></script>
+
+	<style>
+		body {
+			margin:0;
+			padding:0;
+			overflow: hidden;
+			background: rgb(34,193,195);
+			background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+		}
+		canvas {
+			margin:auto;
+		}
+
+		.texto{
+			text-align: center;
+		}
+		.title{
+			display: flex;
+			justify-content: space-around;
+		}
+		.bDiv{
+			margin-top: 10px;
+			background-color: white;
+		    color: black;
+		    font-size: 18px;
+		    border: 2px solid #008CBA; 
+		}
+		.label{
+			font-size: 24px;
+		}
+		.inputnum{
+			font-size: 24px;
+		}
+		
+	</style>
+</head>
+<body>
+
+	<div class="texto">
+		<p class="label">Dividir en: </p>
+		<input class="inputnum" type="number" id="input-number" value="2">
+		<div class="div-button">
+			<button class="bDiv" onclick="dividir()">Dividir</button>
+		</div>
+	</div>
+	<div class="title">
+		<p class="label">Algoritmo Punto Pendiente</p>
+		<p class="label">Algoritmo DDA</p>
+		<p class="label">Algoritmo Bresenham</p>
+	</div>
+</body>
+</html>
